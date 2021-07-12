@@ -4,6 +4,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Footer: typeof import('./src/components/Footer.vue')['default']
+<<<<<<< HEAD
     Icon: typeof import('./src/components/Icon.vue')['default']
     ListPosts: typeof import('./src/components/ListPosts.vue')['default']
     ListProjects: typeof import('./src/components/ListProjects.vue')['default']
@@ -21,6 +22,11 @@ declare module 'vue' {
     MarkerPattern: typeof import('./src/components/slides/MarkerPattern.vue')['default']
     MarkerTips: typeof import('./src/components/slides/MarkerTips.vue')['default']
     VueUseFn: typeof import('./src/components/slides/VueUseFn.vue')['default']
+=======
+    HeroHome: typeof import('./src/components/HeroHome.vue')['default']
+    Pricing: typeof import('./src/components/Pricing.vue')['default']
+    README: typeof import('./src/components/README.md')['default']
+>>>>>>> 956e9efdecb64624d0fa122275b6d21c197479e8
   }
 }
 
