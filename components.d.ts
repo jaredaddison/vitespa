@@ -3,15 +3,16 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Footer: typeof import('./src/components/Footer.vue')['default']
-<<<<<<< HEAD
+    HeroHome: typeof import('./src/components/HeroHome.vue')['default']
     Icon: typeof import('./src/components/Icon.vue')['default']
     ListPosts: typeof import('./src/components/ListPosts.vue')['default']
     ListProjects: typeof import('./src/components/ListProjects.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     Plum: typeof import('./src/components/Plum.vue')['default']
     Post: typeof import('./src/components/Post.vue')['default']
+    Pricing: typeof import('./src/components/Pricing.vue')['default']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
+    VueFooter: typeof import('./src/components/VueFooter.vue')['default']
     Slidev: typeof import('./src/components/icones/Slidev.vue')['default']
     VueDemi: typeof import('./src/components/icones/VueDemi.vue')['default']
     VueReactivity: typeof import('./src/components/icones/VueReactivity.vue')['default']
@@ -22,11 +23,16 @@ declare module 'vue' {
     MarkerPattern: typeof import('./src/components/slides/MarkerPattern.vue')['default']
     MarkerTips: typeof import('./src/components/slides/MarkerTips.vue')['default']
     VueUseFn: typeof import('./src/components/slides/VueUseFn.vue')['default']
-=======
-    HeroHome: typeof import('./src/components/HeroHome.vue')['default']
-    Pricing: typeof import('./src/components/Pricing.vue')['default']
-    README: typeof import('./src/components/README.md')['default']
->>>>>>> 956e9efdecb64624d0fa122275b6d21c197479e8
+    CarbonFire: typeof import('virtual:vite-icons/carbon/fire')['default']
+    RiArticleLine: typeof import('virtual:vite-icons/ri/article-line')['default']
+    RiLightbulbLine: typeof import('virtual:vite-icons/ri/lightbulb-line')['default']
+    RiBookmarkLine: typeof import('virtual:vite-icons/ri/bookmark-line')['default']
+    RiStickyNoteLine: typeof import('virtual:vite-icons/ri/sticky-note-line')['default']
+    FeatherTwitter: typeof import('virtual:vite-icons/feather/twitter')['default']
+    UilGithubAlt: typeof import('virtual:vite-icons/uil/github-alt')['default']
+    LaRssSquare: typeof import('virtual:vite-icons/la/rss-square')['default']
+    RiMoonLine: typeof import('virtual:vite-icons/ri/moon-line')['default']
+    RiSunLine: typeof import('virtual:vite-icons/ri/sun-line')['default']
   }
 }
 
