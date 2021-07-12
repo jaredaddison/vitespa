@@ -4,14 +4,23 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Footer: typeof import('./src/components/Footer.vue')['default']
-    README: typeof import('./src/components/README.md')['default']
-    CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
-    CarbonMoon: typeof import('virtual:vite-icons/carbon/moon')['default']
-    CarbonSun: typeof import('virtual:vite-icons/carbon/sun')['default']
-    CarbonLanguage: typeof import('virtual:vite-icons/carbon/language')['default']
-    CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
-    CarbonLogoGithub: typeof import('virtual:vite-icons/carbon/logo-github')['default']
-    CarbonPedestrian: typeof import('virtual:vite-icons/carbon/pedestrian')['default']
+    Icon: typeof import('./src/components/Icon.vue')['default']
+    ListPosts: typeof import('./src/components/ListPosts.vue')['default']
+    ListProjects: typeof import('./src/components/ListProjects.vue')['default']
+    NavBar: typeof import('./src/components/NavBar.vue')['default']
+    Plum: typeof import('./src/components/Plum.vue')['default']
+    Post: typeof import('./src/components/Post.vue')['default']
+    ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
+    Slidev: typeof import('./src/components/icones/Slidev.vue')['default']
+    VueDemi: typeof import('./src/components/icones/VueDemi.vue')['default']
+    VueReactivity: typeof import('./src/components/icones/VueReactivity.vue')['default']
+    VueUse: typeof import('./src/components/icones/VueUse.vue')['default']
+    DarkToggleButton: typeof import('./src/components/slides/DarkToggleButton.vue')['default']
+    Marker: typeof import('./src/components/slides/Marker.vue')['default']
+    MarkerCore: typeof import('./src/components/slides/MarkerCore.vue')['default']
+    MarkerPattern: typeof import('./src/components/slides/MarkerPattern.vue')['default']
+    MarkerTips: typeof import('./src/components/slides/MarkerTips.vue')['default']
+    VueUseFn: typeof import('./src/components/slides/VueUseFn.vue')['default']
   }
 }
 

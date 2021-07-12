@@ -63,7 +63,6 @@ export default defineConfig({
         // https://github.com/antfu/vite-plugin-icons
         ViteIconsResolver({
           componentPrefix: '',
-          // enabledCollections: ['carbon']
         }),
       ],
     }),
@@ -81,9 +80,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitespa',
-        short_name: 'Vitespa',
-        theme_color: '#ffffff',
+        name: 'Veterinary Education & Training Services',
+        short_name: 'VETS',
+        theme_color: '#121212',
         icons: [
           {
             src: '/pwa-192x192.png',

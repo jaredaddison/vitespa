@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "vite --port 3333 --open",
+    "Addo": "pnpm i -D @headlessui/vue",
+    "dev": "vite --port 3333 --open --host",
     "build": "vite build",
     "preview": "vite preview",
     "preview-https": "serve dist"
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.6.6",
+    "@headlessui/vue": "^1.3.0",
     "@iconify/json": "^1.1.358",
     "@intlify/vite-plugin-vue-i18n": "^2.2.1",
     "@types/nprogress": "^0.2.0",
