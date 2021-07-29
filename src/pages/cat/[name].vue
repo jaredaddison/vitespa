@@ -10,7 +10,7 @@ const { t } = useI18n()
 <template>
   <div>
     <p class="text-4xl">
-      <carbon-pedestrian class="inline-block" />
+      <mdi-cat class="inline-block" />
     </p>
     <p>
       {{ t('intro.hi', { name: props.name }) }}
@@ -18,7 +18,7 @@ const { t } = useI18n()
     <p class="text-sm opacity-50">
       <em>{{ t('intro.dynamic-route') }}</em>
     </p>
-
+    <CustomInput />
     <div>
       <button
         class="btn m-3 text-sm mt-8"

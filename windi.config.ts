@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite-plugin-windicss'
 import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
+import aspect from 'windicss/plugin/aspect-ratio'
 
 export default defineConfig({
   darkMode: 'class',
   plugins: [
-    typography(),
+    typography(), aspect(),
   ],
   attributify: true,
   theme: {
@@ -22,7 +23,7 @@ export default defineConfig({
               'textDecoration': 'underline',
               '&:hover': {
                 opacity: 1,
-                color: colors.teal[600],
+                color: colors.indigo[600],
               },
             },
             b: { color: 'inherit' },

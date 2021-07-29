@@ -3,11 +3,26 @@ button:
   back: Back
   go: GO
   home: Home
-  toggle_dark: Toggle dark mode
-  toggle_langs: Change languages
+  toggle_dark: Toggle Dark
+  toggle_langs: Toggle Lang
 intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  whats-your-name: What's your name?
-not-found: Not found
+  desc: Saving Pets & Training Vets
+  dynamic-route: Patient Care Plan
+  hi: Fluid Plan for {name}
+  whats-your-name: Patient's Name
+not-found: 404 | Not Found
+HeroHome:
+  title: Veterinary Support Initiative
+  subtitle: Saving Pets & Training Vets
+  about: Veterinary Engagement Training and Support
+DogFluids:
+  title: Canine Fluid Plan
+  subtitle: Fluids in a Flash
+  petname:  Pet's Name
+CatFluids:
+  title: Cat Fluid Plan
+  subtitle: Fluids in a Flash
+  petname:  Pet's Name
+CustomInput:
+  title: Fluid Plan for {name}
+  subtitle: The following is an automatically generated fluid plan and needs to be tailored for {name}. This is designed to augment {name}'s fluid plan.

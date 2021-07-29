@@ -1,26 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-
 const { t } = useI18n()
-const name = ref('')
-const router = useRouter()
-
-const dog = () => {
-  if (name.value)
-    router.push(`/dog/${encodeURIComponent(name.value)}`)
-}
-
-const cat = () => {
-  if (name.value)
-    router.push(`/cat/${encodeURIComponent(name.value)}`)
-}
 </script>
 
 <template>
   <div
-    class="dark:bg-gradient-to-tr from-gray-600 via-gray-700 to-gray-900 min-h-screen min-w-screen relative overflow-hidden"
+    class="dark:bg-gradient-to-tr from-hex-121212/100 via-hex-121212/50 to-hex-121212/25 min-h-screen min-w-screen relative overflow-hidden"
   >
     <div class="hidden sm:block sm:absolute sm:h-full sm:w-full sm:inset-y-0">
       <div class="h-full mx-auto max-w-7xl relative">
@@ -102,7 +87,7 @@ const cat = () => {
             >{{ t('HeroHome.title') }}</span>
             <br />
             {{ " " }}
-            <span class="text-4xl text-gray-100/75 block xl:inline">
+            <span class="text-4xl text-gray-700/75 block xl:inline">
               {{ t('HeroHome.subtitle') }}
             </span>
           </h1>
@@ -114,84 +99,10 @@ const cat = () => {
         </div>
       </header>
       <div class="shadow-xl">
-          <div class="py-2" />
-
-  <div class="bg-hex-121212 mx-auto ml-10 mr-10 p-10 align-content-center text-center shadow-xl">
-    <p class="text-5xl text-gray-100">
-      <mdi-dog class="inline-block" />
-    </p>
-    <p class="text-4xl text-gray-100">
-      {{ t('DogFluids.title') }}
-    </p>
-    <p class="text-2xl">
-      <em class="text-sm text-gray-100/50">
-        {{ t('DogFluids.subtitle') }}
-      </em>
-    </p>
-
-    <div class="py-2" />
-
-    <input
-      id="input"
-      v-model="name"
-      :placeholder="t('DogFluids.petname')"
-      :aria-label="t('DogFluids.petname')"
-      type="text"
-      autocomplete="false"
-      class="text mx-auto my-auto px-4 py-2 w-250px text-center border-rounded border-gray-100 bg-gray-100 outline-none active:{text-gray-900 border-2 border-green-400}"
-      @keydown.enter="dog"
-    >
-    <label class="hidden" for="input">{{ t('DogFluids.petname') }}</label>
-    <div>
-      <button
-        class="m-3 text-sm btn"
-        :disabled="!name"
-        @click="dog"
-      >
-        {{ t('button.go') }}
-      </button>
-    </div>
-  </div>
+        <DogFluids />
       </div>
       <div class="shadow-xl">
-         <div class="py-2" />
-
-  <div class="bg-hex-121212 mx-auto ml-10 mr-10 p-10 align-content-center text-center shadow-xl">
-    <p class="text-5xl text-gray-100">
-      <mdi-cat class="inline-block" />
-    </p>
-    <p class="text-4xl text-gray-100">
-      {{ t('CatFluids.title') }}
-    </p>
-    <p class="text-2xl">
-      <em class="text-sm text-gray-100/50">
-        {{ t('CatFluids.subtitle') }}
-      </em>
-    </p>
-
-    <div class="py-2" />
-
-    <input
-      id="input"
-      v-model="name"
-      :placeholder="t('CatFluids.petname')"
-      :aria-label="t('CatFluids.petname')"
-      type="text"
-      autocomplete="false"
-      class="text mx-auto my-auto px-4 py-2 w-250px text-center border-rounded border-gray-100 bg-gray-100 outline-none active:{text-gray-900 border-2 border-green-400}"
-      @keydown.enter="cat"
-    >
-    <label class="hidden" for="input">{{ t('CatFluids.petname') }}</label>
-    <div>
-      <button
-        class="m-3 text-sm btn"
-        :disabled="!name"
-        @click="cat"
-      >
-        {{ t('button.go') }}
-      </button>
-    </div>
-  </div>
+        <FelineFluids />
       </div>
     </div>
   </div>
