@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { isDark } from '/~/logics'
-</script>
-
 <template>
   <header class="header">
     <router-link
@@ -9,22 +5,21 @@ import { isDark } from '/~/logics'
       to="/"
       focusable="false"
     >
-      <!--<img v-show="isDark" src="/logo-dark.svg" alt="logo">
-      <img v-show="!isDark" src="/logo.svg" alt="logo">-->
+      <i></i>
     </router-link>
     <nav class="nav">
       <div class="spacer" />
       <div class="right">
         <router-link to="/posts">
           <span class="<md:hidden">Blog</span>
-          <ri-article-line class="md:hidden"/>
+          <ri-article-line class="md:hidden" />
         </router-link>
         <router-link to="/talks" class="<md:hidden">
           Talks
         </router-link>
         <router-link to="/projects">
           <span class="<md:hidden">Projects</span>
-          <ri-lightbulb-line class="md:hidden"/>
+          <ri-lightbulb-line class="md:hidden" />
         </router-link>
         <router-link to="/bookmarks" title="Bookmarks" class="<md:hidden">
           <ri-bookmark-line />
@@ -44,6 +39,7 @@ import { isDark } from '/~/logics'
         <toggle-theme />
       </div>
     </nav>
+    </router-link>
   </header>
 </template>
 
