@@ -23,6 +23,15 @@ declare module 'vue' {
     MarkerPattern: typeof import('./src/components/slides/MarkerPattern.vue')['default']
     MarkerTips: typeof import('./src/components/slides/MarkerTips.vue')['default']
     VueUseFn: typeof import('./src/components/slides/VueUseFn.vue')['default']
+    RiArticleLine: typeof import('virtual:vite-icons/ri/article-line')['default']
+    RiLightbulbLine: typeof import('virtual:vite-icons/ri/lightbulb-line')['default']
+    RiBookmarkLine: typeof import('virtual:vite-icons/ri/bookmark-line')['default']
+    RiStickyNoteLine: typeof import('virtual:vite-icons/ri/sticky-note-line')['default']
+    FeatherTwitter: typeof import('virtual:vite-icons/feather/twitter')['default']
+    UilGithubAlt: typeof import('virtual:vite-icons/uil/github-alt')['default']
+    LaRssSquare: typeof import('virtual:vite-icons/la/rss-square')['default']
+    RiMoonLine: typeof import('virtual:vite-icons/ri/moon-line')['default']
+    RiSunLine: typeof import('virtual:vite-icons/ri/sun-line')['default']
   }
 }
 
