@@ -3,6 +3,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    FluidCalc: typeof import('./src/components/FluidCalc.vue')['default']
     HeroHome: typeof import('./src/components/HeroHome.vue')['default']
     Icon: typeof import('./src/components/Icon.vue')['default']
     ListPosts: typeof import('./src/components/ListPosts.vue')['default']
@@ -27,9 +28,6 @@ declare module 'vue' {
     RiLightbulbLine: typeof import('virtual:vite-icons/ri/lightbulb-line')['default']
     RiBookmarkLine: typeof import('virtual:vite-icons/ri/bookmark-line')['default']
     RiStickyNoteLine: typeof import('virtual:vite-icons/ri/sticky-note-line')['default']
-    FeatherTwitter: typeof import('virtual:vite-icons/feather/twitter')['default']
-    UilGithubAlt: typeof import('virtual:vite-icons/uil/github-alt')['default']
-    LaRssSquare: typeof import('virtual:vite-icons/la/rss-square')['default']
     RiMoonLine: typeof import('virtual:vite-icons/ri/moon-line')['default']
     RiSunLine: typeof import('virtual:vite-icons/ri/sun-line')['default']
   }
