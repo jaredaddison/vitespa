@@ -50,7 +50,9 @@
         <ul role="list" class="-my-5 divide-y divide-gray-200">
           <li class="py-5">
             <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
-              <h3 class="text-sm font-semibold text-gray-800" v-text="cat.maintRate" />
+              <h3 class="text-sm font-semibold text-gray-800">
+                {{ cat.maintRate }} ml/hr
+              </h3>
               <p class="mt-1 text-sm text-gray-600 line-clamp-2">
                 This is the maintenance fluid rate
               </p>
@@ -58,9 +60,31 @@
           </li>
           <li class="py-5">
             <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
-              <h3 class="text-sm font-semibold text-gray-800" v-text="cat.bolusVolume" />
+              <h3 class="text-sm font-semibold text-gray-800">
+                {{ cat.bolusVolume }} ml
+              </h3>
               <p class="mt-1 text-sm text-gray-600 line-clamp-2">
-                Total volume to be provided over a 15-20minute interval
+                This is the total volume to be provided over a 15-20 minute interval
+              </p>
+            </div>
+          </li>
+          <li class="py-5">
+            <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
+              <h3 class="text-sm font-semibold text-gray-800">
+                {{ cat.initialRate }} ml/hr
+              </h3>
+              <p class="mt-1 text-sm text-gray-600 line-clamp-2">
+                This is the initial fluid rate to be provided over the first 6h
+              </p>
+            </div>
+          </li>
+          <li class="py-5">
+            <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
+              <h3 class="text-sm font-semibold text-gray-800">
+                {{ cat.ongoingRate }} ml/hr
+              </h3>
+              <p class="mt-1 text-sm text-gray-600 line-clamp-2">
+                This is the fluid rate to be provided after the first 6h
               </p>
             </div>
           </li>
