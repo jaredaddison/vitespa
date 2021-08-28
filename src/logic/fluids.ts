@@ -1,4 +1,4 @@
-import { reactive, computed } from 'vue'
+import { reactive, computed } from 'vue-demi'
 
 export const dog: any = reactive({
   weight: '',

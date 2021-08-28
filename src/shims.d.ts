@@ -6,7 +6,7 @@ declare interface Window {
 
 // with vite-plugin-md, markdowns can be treat as Vue components
 declare module '*.md' {
-  import { ComponentOptions } from 'vue'
+  import { ComponentOptions } from 'vue-demi'
   const component: ComponentOptions
   export default component
 }

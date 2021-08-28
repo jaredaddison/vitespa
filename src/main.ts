@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue-demi'
 import { createRouter, createWebHistory } from 'vue-router'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'

@@ -1,12 +1,15 @@
 <template>
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none" style="z-index: -1">
-    <canvas ref="el" width="400" height="400" />
-  </div>
+	<div
+		class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none"
+		style="z-index: -1"
+	>
+		<canvas ref="el" width="400" height="400" />
+	</div>
 </template>
 
 <script setup='props' lang='ts'>
 import { useRafFn, useWindowSize, noop } from '@vueuse/core'
-import { onMounted, ref, reactive } from 'vue'
+import { onMounted, ref, reactive } from 'vue-demi'
 import type { Fn } from '@vueuse/core'
 
 const r180 = Math.PI

@@ -1,4 +1,4 @@
-import { App } from 'vue'
+import { App } from 'vue-demi'
 import { Router, RouteRecordRaw } from 'vue-router'
 import { HeadClient } from '@vueuse/head'
 
