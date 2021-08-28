@@ -1,44 +1,45 @@
 <template>
-	<div
-		ref="el"
-		:class="$attrs.class"
-		style="vertical-align: text-bottom; min-width:1em; min-height:1em;"
-	/>
+  <div
+    ref="el"
+    :class="$attrs.class"
+    style="vertical-align: text-bottom; min-width:1em; min-height:1em;"
+  />
 </template>
 
 <script setup lang="ts">
-	import { watch, ref, onMounted, nextTick, defineProps } from "vue-demi";
-	import Iconify from "@iconify/iconify";
+import { watch, ref, onMounted, nextTick, defineProps } from 'vue-demi'
+import Iconify from '@iconify/iconify'
 
-	const props = defineProps({
+const props = defineProps({
 	  icon: {
 	    type: String,
-	    required: true
-	  }
-	});
+	    required: true,
+	  },
+})
 
-	const el = ref<HTMLElement | null>(null);
+const el = ref<HTMLElement | null>(null)
 
-	const update = async () => {
+const update = async() => {
 	  if (el.value) {
-	    await nextTick();
-	    const svg = Iconify.renderSVG(props.icon, {});
+	    await nextTick()
+	    const svg = Iconify.renderSVG(props.icon, {})
 	    if (svg) {
-	      el.value.textContent = "";
-	      el.value.appendChild(svg);
-	    } else {
-	      const span = document.createElement("span");
-	      span.className = "iconify";
-	      span.dataset.icon = props.icon;
-	      el.value.textContent = "";
-	      el.value.appendChild(span);
+	      el.value.textContent = ''
+	      el.value.appendChild(svg)
+	    }
+    else {
+	      const span = document.createElement('span')
+	      span.className = 'iconify'
+	      span.dataset.icon = props.icon
+	      el.value.textContent = ''
+	      el.value.appendChild(span)
 	    }
 	  }
-	};
+}
 
-	watch(() => props.icon, update, { flush: "post" });
+watch(() => props.icon, update, { flush: 'post' })
 
-	onMounted(update);
+onMounted(update)
 </script>
 
 <style>
