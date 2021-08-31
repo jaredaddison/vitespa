@@ -3,6 +3,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Badge: typeof import('./src/components/Badge.vue')['default']
     DarkToggleButton: typeof import('./src/components/slides/DarkToggleButton.vue')['default']
     FluidCalc: typeof import('./src/components/FluidCalc.vue')['default']
     HeroHome: typeof import('./src/components/HeroHome.vue')['default']
@@ -24,6 +25,7 @@ declare module 'vue' {
     RiStickyNoteLine: typeof import('virtual:vite-icons/ri/sticky-note-line')['default']
     RiSunLine: typeof import('virtual:vite-icons/ri/sun-line')['default']
     Slidev: typeof import('./src/components/icones/Slidev.vue')['default']
+    Tasks: typeof import('./src/components/Tasks.vue')['default']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
     VueDemi: typeof import('./src/components/icones/VueDemi.vue')['default']
     VueFooter: typeof import('./src/components/VueFooter.vue')['default']

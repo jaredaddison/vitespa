@@ -9,7 +9,7 @@ export const dog: any = reactive({
   maintRate: computed(() => Math.round((dog.weight ** 0.75 * 132) / 24)),
   deficitVolume: computed(() => Math.round(dog.weight * dog.dehydration * 10)),
   initialRate: computed(() => Math.round((dog.deficitVolume - dog.bolusVolume * dog.bolusNumber) / 2 / 6 + dog.maintRate + dog.ongoingLoss)),
-  ongoingRate: computed(() => Math.round((dog.deficitVolume - dog.bolusVolume * dog.bolusNumber) / 2 / 18 + dog.maintRate + dog.ongoingLoss))
+  ongoingRate: computed(() => Math.round((dog.deficitVolume - dog.bolusVolume * dog.bolusNumber) / 2 / 18 + dog.maintRate + dog.ongoingLoss)),
 })
 
 export const cat: any = reactive({
