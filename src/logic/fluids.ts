@@ -1,4 +1,5 @@
 import { reactive, computed } from 'vue-demi'
+import { log, set } from 'vue-chemistry'
 
 export const dog: any = reactive({
   weight: '',
@@ -23,3 +24,8 @@ export const cat: any = reactive({
   initialRate: computed(() => Math.round((cat.deficitVolume - cat.bolusVolume * cat.bolusNumber) / 2 / 6 + cat.maintRate + cat.ongoingLoss)),
   ongoingRate: computed(() => Math.round((cat.deficitVolume - cat.bolusVolume * cat.bolusNumber) / 2 / 18 + cat.maintRate + cat.ongoingLoss)),
 })
+
+set(cat.weight, 10)
+set(cat.dehydration, 5)
+set(cat.ongoingLoss, 0)
+set(cat.bolusNumber, 0)

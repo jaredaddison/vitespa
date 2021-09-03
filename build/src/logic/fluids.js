@@ -1,9 +1,9 @@
 import { reactive, computed } from 'vue-demi';
 export const dog = reactive({
-    weight: '',
-    dehydration: '',
-    ongoingLoss: '',
-    bolusNumber: '',
+		weight: 1,
+    dehydration: 0,
+    ongoingLoss: 0,
+    bolusNumber: 0,
     bolusVolume: computed(() => Math.round(dog.weight * 20)),
     maintRate: computed(() => Math.round((dog.weight ** 0.75 * 132) / 24)),
     deficitVolume: computed(() => Math.round(dog.weight * dog.dehydration * 10)),
@@ -11,10 +11,10 @@ export const dog = reactive({
     ongoingRate: computed(() => Math.round((dog.deficitVolume - dog.bolusVolume * dog.bolusNumber) / 2 / 18 + dog.maintRate + dog.ongoingLoss)),
 });
 export const cat = reactive({
-    weight: '',
-    dehydration: '',
-    ongoingLoss: '',
-    bolusNumber: '',
+    weight: 5,
+    dehydration: 0,
+    ongoingLoss: 0,
+    bolusNumber: 0,
     bolusVolume: computed(() => Math.round(cat.weight * 10)),
     maintRate: computed(() => Math.round((cat.weight ** 0.75 * 80) / 24)),
     deficitVolume: computed(() => Math.round(cat.weight * cat.dehydration * 10)),

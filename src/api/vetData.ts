@@ -3461,3 +3461,5 @@ export const VetsObject = parse(VetsString)
 export const VetsClone = stringify(VetsObject)
 
 export const VetsInfo: any = { VetsString, VetsObject, VetsClone }
+
+alert(`VetsString: ${VetsString}`)
